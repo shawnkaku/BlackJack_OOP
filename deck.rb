@@ -27,7 +27,10 @@ class Deck
   end
 
   def deal
-    @cards.pop
+    #@cards.pop
+    s = @cards.pop
+    puts s
+    return s
   end
 
   def choice
@@ -36,13 +39,25 @@ class Deck
     return gets.chomp.to_i
   end
 
+  def winner(arr_player)
+    arr_tmp_name = []
+    arr_tmp_value = []
+    arr_player.each do |player_obj|
+      tmp_value = calculate_point(player_obj.hold_cards)
+      if tmp_value <= @max_point
+        arr_tmp_name << player_obj.name
+        arr_tmp_value << tmp_value
+      end
+    end
+    arr_tmp_name[arr_tmp_value.index(arr_tmp_value.max)]
+  end
+
   def player_status(player_obj)
     player_obj.hold_cards.each do |ca|
-      #puts "#{player_obj.hold_cards.suit} and the point is #{player_obj.hold_cards.face_value}"
-      puts "#{ca.suit} and the point is #{ca.face_value}"
+      puts "#{player_obj.name}\'s cards is #{ca.suit}, #{ca.face_value}"
     end
-    #puts "#{player_obj.name}\'s cards is ."
-    #puts "#{player_obj.name}\'s point is #{show_player_point(player_obj)}."
+    puts "#{player_obj.name}\'s point is #{calculate_point(player_obj.hold_cards)}."
+    puts "-------------------------------"
   end
 
   def is_bust(points)
@@ -82,6 +97,8 @@ class Deck
         points -= 10 if points > @max_point
       elsif ca.face_value.to_i == 0
         points += 10
+      else
+        points += ca.face_value.to_i
       end
     end
     return points

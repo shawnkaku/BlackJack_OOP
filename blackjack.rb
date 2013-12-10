@@ -12,13 +12,17 @@ class Blackjack
     puts "Welcome to the BlackJack game. What's your name?"
     @Player1 = Player.new(gets.chomp.to_s)
     @Dealer = Dealer.new
+    @arr_p = Array.new
+    @arr_p << @Player1
+    @arr_p << @Dealer
   end
 
   def Run
     choice = 1
-    while choice == 1
-      @DK.hit(@Player1, true)
-      @DK.hit(@Dealer, false)
+    #@DK.hit(@Player1, true)
+    #@DK.hit(@Dealer, false)
+    @DK.init_new(@Player1, @Dealer)
+    while choice != 3
       if @Player1.status == "BST"
         choice = 2
         puts "#{@Player1.name} is bust."
@@ -34,11 +38,12 @@ class Blackjack
           @DK.stay(@Player1)
           # turn to dealer to do something
           loop do @DK.hit(@Dealer, true)
-          break if (@Dealer.dealer_rule(@DK.player_point(@Dealer)) == true)
+          break if (@Dealer.dealer_rule(@DK.calculate_point(@Dealer.hold_cards)) == true)
           end
           # Compare which one is the winner in this turn
-          player_h = {@Player1.name => @DK.player_point(@Player1), @Dealer.name => @DK.player_point(@Dealer)}
+          puts "Winner is #{@DK.winner(@arr_p)}."
           #puts "This round winner is #{BJ.winner(player_h)}."
+          puts "********  Start the new turn  ********"
           @Player1.init()
           @Dealer.init()
           @DK.init_new(@Player1, @Dealer)

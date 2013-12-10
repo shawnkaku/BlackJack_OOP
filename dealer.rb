@@ -4,6 +4,7 @@ class Dealer < Player
 
   def initialize
     #self.initialize("Dealer")
+    @name = "Dealer"
     @hold_cards = Array.new
     self.init
     puts "dealer"
