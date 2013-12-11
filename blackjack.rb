@@ -5,50 +5,50 @@ require_relative 'card'
 
 class Blackjack
 
-  def initialize
-    puts "============= Strat the BlackJack Game ============="
-    puts "How many decks in this game?"
-    @DK = Deck.new(gets.chomp.to_i)
-    puts "Welcome to the BlackJack game. What's your name?"
-    @Player1 = Player.new(gets.chomp.to_s)
-    @Dealer = Dealer.new
+  def initialize(i_deck, s_player)
+    @dk = Deck.new(i_deck)
+    @player1 = Player.new(s_player)
+    @dealer = Dealer.new
     @arr_p = Array.new
-    @arr_p << @Player1
-    @arr_p << @Dealer
   end
 
-  def Run
+  def init_new
+    @arr_p.clear
+    @arr_p << @player1
+    @arr_p << @dealer
+  end
+
+  def run
     choice = 1
-    #@DK.hit(@Player1, true)
-    #@DK.hit(@Dealer, false)
-    @DK.init_new(@Player1, @Dealer)
+    @dk.init_new(@player1, @dealer)
+    init_new
     while choice != 3
-      if @Player1.status == "BST"
+      if @player1.status == "BST"
         choice = 2
-        puts "#{@Player1.name} is bust."
+        puts "#{@player1.name} is bust."
       else
-        choice = @DK.choice
+        choice = @dk.choice
       end
       case
         when choice == 1
-          if @DK.hit(@Player1, true)
-            @Player1.status = "BST"
+          if @dk.hit(@player1, true)
+            @player1.status = "BST"
           end
         when choice == 2
-          @DK.stay(@Player1)
+          @dk.stay(@player1)
           # turn to dealer to do something
-          loop do @DK.hit(@Dealer, true)
-          break if (@Dealer.dealer_rule(@DK.calculate_point(@Dealer.hold_cards)) == true)
+          loop do @dk.hit(@dealer, true)
+          break if (@dealer.dealer_rule(@dk.calculate_point(@dealer.hold_cards)) == true)
           end
           # Compare which one is the winner in this turn
-          puts "Winner is #{@DK.winner(@arr_p)}."
-          #puts "This round winner is #{BJ.winner(player_h)}."
+          puts "Winner is #{@dk.winner(@arr_p)}."
           puts "********  Start the new turn  ********"
-          @Player1.init()
-          @Dealer.init()
-          @DK.init_new(@Player1, @Dealer)
+          @player1.init()
+          @dealer.init()
+          @dk.init_new(@player1, @dealer)
+          init_new
         when choice == 3
-          @DK.quit(@Player1)
+          @dk.quit(@player1)
         else
           puts "You didn't Enter any choice. Please Enter 1, 2, or 3."
       end
@@ -56,6 +56,11 @@ class Blackjack
   end
 end
 
-BJ = Blackjack.new
-BJ.Run
+puts "============= Strat the BlackJack Game ============="
+puts "How many decks in this game?"
+decks = gets.chomp.to_i
+puts "Welcome to the BlackJack game. What's your name?"
+players = gets.chomp.to_s
+bj = Blackjack.new(decks, players)
+bj.run
 

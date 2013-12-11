@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" name="Default" comment="" />
+    <list default="true" id="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blackjack.rb" afterPath="$PROJECT_DIR$/blackjack.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="BlackJack_OOP.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/player.rb" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386496917463" ignored="false" />
@@ -9,8 +12,8 @@
     <file path="/deck.rb" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386590179931" ignored="false" />
     <file path="/dealer.rb" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386519961514" ignored="false" />
     <file path="/black_jack.rb" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386487879566" ignored="false" />
-    <file path="/blackjack.rb" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386590230282" ignored="false" />
-    <file path="/Dummy.txt" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386589853350" ignored="false" />
+    <file path="/blackjack.rb" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386770173558" ignored="false" />
+    <file path="/Dummy.txt" changelist="3805c8ed-23a7-4df0-ba1b-57b6ed4c0692" time="1386768634781" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
       <file leaf-file-name="dealer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dealer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+            <state line="10" column="21" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,7 +63,7 @@
       <file leaf-file-name="deck.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deck.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="29" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+            <state line="51" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +72,7 @@
       <file leaf-file-name="blackjack.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blackjack.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="35" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.34931508">
+            <state line="23" column="12" selection-start="428" selection-end="428" vertical-scroll-proportion="-0.1369863">
               <folding />
             </state>
           </provider>
@@ -185,11 +188,11 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="Console Folding" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Ruby.blackjack">
     <configuration default="false" name="blackjack" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -357,11 +360,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18267831" sideWeight="0.38273382" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18558952" sideWeight="0.38273382" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18267831" sideWeight="0.2877698" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18558952" sideWeight="0.2877698" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -505,6 +508,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/ruby-debug-ide-0.4.17/lib/ruby-debug-ide.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="0" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.29478458" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/card.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
@@ -512,9 +520,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p353/gems/ruby-debug-ide-0.4.17/lib/ruby-debug-ide.rb">
+    <entry file="file://$PROJECT_DIR$/dealer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="2111" selection-end="2111" vertical-scroll-proportion="0.29478458" />
+        <state line="10" column="21" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/player.rb">
@@ -524,23 +534,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dealer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deck.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="29" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+        <state line="51" column="0" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blackjack.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="35" selection-start="1327" selection-end="1327" vertical-scroll-proportion="0.34931508">
+        <state line="23" column="12" selection-start="428" selection-end="428" vertical-scroll-proportion="-0.1369863">
           <folding />
         </state>
       </provider>
